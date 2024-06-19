@@ -1,3 +1,7 @@
+
+
+// array delle immagini
+
 const images = [ 
     { 
         image: 'img/01.webp', 
@@ -25,3 +29,12 @@ const images = [
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.', 
     } 
 ];
+
+console.log(images);
+
+// creazione di un ciclo per estrapolare i valori degli oggetti
+for (let i = 0; i < images.length; i++ ) {
+    const listItem = images[i];
+
+}
+
