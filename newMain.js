@@ -46,3 +46,7 @@ for (let i = 0; i < images.length; i++ ) {
     <p>"${listItem.text}"</p>`;
 }
 
+//inserire la classe active del CSS al primo elemento della lista 
+let activeImg= 0;
+const items= document.getElementsByClassName("item");
+items[activeImg].classList.add("active");
