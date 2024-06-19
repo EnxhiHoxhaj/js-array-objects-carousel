@@ -37,6 +37,12 @@ for (let i = 0; i < images.length; i++ ) {
     const listItem = images[i];
     // seleziono il mio contenitore dal DOM
     const card = document.querySelector(".container");
-
+    // creazione di div nel DOM per stampare i valore degli oggetti 
+    card.innerHTML += `
+    <div class="item">
+        <img src="${listItem.image}" alt= "${listItem.title}"/>
+    </div>
+    <h3>"${listItem.title}"</h3>
+    <p>"${listItem.text}"</p>`;
 }
 
