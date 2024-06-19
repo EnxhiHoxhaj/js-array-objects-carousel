@@ -35,6 +35,8 @@ console.log(images);
 // creazione di un ciclo per estrapolare i valori degli oggetti
 for (let i = 0; i < images.length; i++ ) {
     const listItem = images[i];
+    // seleziono il mio contenitore dal DOM
+    const card = document.querySelector(".container");
 
 }
 
