@@ -14,11 +14,13 @@
 }
 
 .item{
-    height: 300px;
-    width: 650px;
+    height: 500px;
+    width: 1000px;
+    contain: content;
     display: none;
     text-align: center;
     background-color: rgb(119, 136, 153, 0.75);
+    position: relative;
 
 }
 
@@ -27,13 +29,16 @@
 }
 
 .item > img {
-   max-width: 800px;
-   max-height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: -400px;
+    left: 0;
 }
 
 .arrow {
     position: relative;
     cursor: pointer;
+    z-index: 800;
 }
 
 .click {
@@ -41,4 +46,15 @@
     position: absolute;
     background-color: transparent;
     color:  rgb(119, 136, 153, 0.5);
+}
+
+.text {
+    color: white;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 80%;
+    text-align: end;
+    z-index: 700;
+
 }

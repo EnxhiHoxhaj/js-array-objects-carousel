@@ -40,10 +40,13 @@ for (let i = 0; i < images.length; i++ ) {
     // creazione di div nel DOM per stampare i valore degli oggetti 
     card.innerHTML += `
     <div class="item">
+        <div class= "text">
+            <h3>"${listItem.title}"</h3>
+            <p>"${listItem.text}"</p>
+        </div>
         <img src="${listItem.image}" alt= "${listItem.title}"/>
     </div>
-    <h3>"${listItem.title}"</h3>
-    <p>"${listItem.text}"</p>`;
+`;
 }
 
 //inserire la classe active del CSS al primo elemento della lista 
