@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    height: 300px;
+    width: 650px;
+    display: none;
+    text-align: center;
+    background-color: rgb(119, 136, 153, 0.75);
+
+}
+
+.item.active {
+    display: block;
+}
+
+.item > img {
+   max-width: 800px;
+   max-height: 300px;
+}
+
+.arrow {
+    position: relative;
+    cursor: pointer;
+}
+
+.click {
+    font-size: 30px;
+    position: absolute;
+    background-color: transparent;
+    color:  rgb(119, 136, 153, 0.5);
+}
